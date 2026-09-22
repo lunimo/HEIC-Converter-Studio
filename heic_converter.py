@@ -643,23 +643,23 @@ class MainWindow(FluentWindow):
     self.update_thread.start()
 
   def on_update_checked(self, available, latest_version, url):
-    """Срабатывает, когда сервер GitHub прислал ответ."""
-    if available:
-      # Показываем всплывающее окно в стиле Windows 11
-      info_bar = InfoBar.info(
-          title="Доступно обновление!",
-          content=(
-              f"Вышла новая версия {latest_version}. Нажмите сюда, чтобы"
-              " скачать."
-          ),
-          orient=Qt.Orientation.Vertical,
-          isClosable=True,
-          position=InfoBarPosition.TOP_RIGHT,
-          duration=-1,  # Окно не закроется, пока пользователь не кликнет
-          parent=self,
-      )
-      # При клике на уведомление открывается страница релиза в браузере
-      info_bar.clicked.connect(lambda: webbrowser.open(url))
+      """Срабатывает, когда сервер GitHub прислал ответ."""
+      if available:
+        # Создаем уведомление
+        info_bar = InfoBar.info(
+            title="Доступно обновление!",
+            content=f"Вышла новая версия {latest_version}.",
+            orient=Qt.Orientation.Vertical,
+            isClosable=True,
+            position=InfoBarPosition.TOP_RIGHT,
+            duration=-1,
+            parent=self,
+        )
+
+        # Добавляем кнопку "Скачать", которая гарантированно открывает ссылку
+        download_btn = PushButton("Скачать")
+        download_btn.clicked.connect(lambda: webbrowser.open(url))
+        info_bar.addWidget(download_btn)
 
 
 # === ТОЧКА ВХОДА С ВНЕШНИМ МОДУЛЕМ ===

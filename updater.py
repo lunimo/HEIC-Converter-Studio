@@ -4,7 +4,7 @@ from PySide6.QtCore import QThread, Signal
 # Данные твоего репозитория на GitHub
 GITHUB_USER = "lunimo"
 REPO_NAME = "HEIC-Converter-Studio"
-CURRENT_VERSION = "v2.0.0"  # Текущая версия приложения
+CURRENT_VERSION = "v2.1.0"  # Текущая версия приложения
 
 
 class CheckUpdateThread(QThread):
