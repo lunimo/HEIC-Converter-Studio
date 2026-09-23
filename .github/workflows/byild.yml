@@ -42,3 +42,17 @@ jobs:
         files: HEIC-Converter-Studio-${{ github.ref_name }}.zip
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Compile Translations
+      run: |
+        python -c "import os, sys, subprocess; exe = os.path.join(os.path.dirname(sys.executable), 'Lib', 'site-packages', 'PySide6', 'lrelease.exe'); subprocess.run([exe, 'translations/en_US.ts', '-qm', 'translations/en_US.qm'])"
+
+    - name: Build with PyInstaller
+      run: |
+        py -m PyInstaller --noconfirm --onedir --windowed --icon="app_icon.ico" --add-data "translations;translations" --name="HEIC Converter Studio" heic_converter.py
+
+    - name: Copy Extra Assets
+      run: |
+        xcopy app_icon.ico "dist\HEIC Converter Studio\" /Y
+        xcopy avatar.png "dist\HEIC Converter Studio\" /Y
+        xcopy translations\*.qm "dist\HEIC Converter Studio\translations\" /I /Y    
