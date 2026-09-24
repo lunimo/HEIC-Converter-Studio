@@ -2,4 +2,4 @@ pyinstaller
 pillow
 pillow-heif
 PySide6
-qfluentwidgets
+PySide6-Fluent-Widgets
