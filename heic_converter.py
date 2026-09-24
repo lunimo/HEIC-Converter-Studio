@@ -53,6 +53,16 @@ register_heif_opener()
 os.environ["QF_DISABLE_INFO"] = "1"
 APP_DIR = os.path.dirname(os.path.abspath(__file__))
 
+def resource_path(relative_path):
+    """ Get absolute path to resource, works for dev and for PyInstaller """
+    try:
+        # PyInstaller создает временную папку и хранит путь в _MEIPASS
+        base_path = sys._MEIPASS
+    except Exception:
+        # Если запущено как скрипт, используем текущую папку
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
 
 def get_resource_path(relative_path):
     base_path = getattr(sys, "_MEIPASS", APP_DIR)
@@ -767,7 +777,7 @@ class AboutInterface(ScrollArea):
         
         self.avatarLabel = QLabel(self.scrollWidget)
         self.avatarLabel.setFixedSize(72, 72)
-        pixmap = QPixmap("avatar.png")
+        pixmap = QPixmap(resource_path("avatar.png"))
         if not pixmap.isNull():
             scaled_pixmap = pixmap.scaled(72, 72, Qt.KeepAspectRatioByExpanding, Qt.SmoothTransformation)
             rounded = QPixmap(72, 72)
