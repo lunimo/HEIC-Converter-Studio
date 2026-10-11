@@ -7,7 +7,7 @@ from PySide6.QtCore import QThread, Signal
 
 GITHUB_USER = "lunimo"
 REPO_NAME = "HEIC-Converter-Studio"
-CURRENT_VERSION = "v2.0.0"  
+CURRENT_VERSION = "v3.0.0"  
 
 
 class CheckUpdateThread(QThread):
