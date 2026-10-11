@@ -12,8 +12,8 @@
         <translation>Version</translation>
     </message>
     <message>
-        <source>Быстрый инструмент для конвертации HEIC в JPG/PNG с интеграцией в Windows 11.</source>
-        <translation>Fast tool for converting HEIC to JPG/PNG with Windows 11 integration.</translation>
+        <source>Универсальный инструмент для конвертации медиа с интеграцией в Windows.</source>
+        <translation>A universal media conversion tool with Windows integration.</translation>
     </message>
     <message>
         <source>О программе и ссылки</source>
@@ -53,7 +53,7 @@
     </message>
     <message>
         <source>Новости разработки и связь с автором</source>
-        <translation>Development news and contact author</translation>
+        <translation>Development news and contact the author</translation>
     </message>
     <message>
         <source>© 2026 lunimo. Распространяется по лицензии MIT.</source>
@@ -67,12 +67,16 @@
         <translation>HEIC Converter Studio</translation>
     </message>
     <message>
-        <source>Перетащите файлы сюда или выберите через кнопки</source>
-        <translation>Drag and drop files here or use the buttons below</translation>
+        <source>Быстрая и удобная пакетная конвертация изображений</source>
+        <translation>Fast and convenient batch image conversion</translation>
     </message>
     <message>
-        <source>Файлы не выбраны</source>
-        <translation>No files selected</translation>
+        <source>Перетащите файлы или папки сюда</source>
+        <translation>Drag and drop files or folders here</translation>
+    </message>
+    <message>
+        <source>Поддерживаются HEIC, AVIF, WEBP, JPG, PNG и другие</source>
+        <translation>Supports HEIC, AVIF, WEBP, JPG, PNG, and more</translation>
     </message>
     <message>
         <source>Выбрать файлы</source>
@@ -83,44 +87,80 @@
         <translation>Select Folder</translation>
     </message>
     <message>
-        <source>Очистить</source>
-        <translation>Clear</translation>
+        <source>Очистить список</source>
+        <translation>Clear List</translation>
+    </message>
+    <message>
+        <source>Формат: JPEG</source>
+        <translation>Format: JPEG</translation>
+    </message>
+    <message>
+        <source>Размер: 100%</source>
+        <translation>Size: 100%</translation>
+    </message>
+    <message>
+        <source>Качество: 90%</source>
+        <translation>Quality: 90%</translation>
+    </message>
+    <message>
+        <source>Назначение: Рядом с оригиналом</source>
+        <translation>Destination: Next to original</translation>
     </message>
     <message>
         <source>Начать конвертацию</source>
         <translation>Start Conversion</translation>
     </message>
     <message>
-        <source>Открыть папку с результатами</source>
+        <source>Открыть папку с результатом</source>
         <translation>Open Output Folder</translation>
     </message>
     <message>
-        <source>Выберите HEIC снимки</source>
-        <translation>Select HEIC photos</translation>
+        <source>Формат:</source>
+        <translation>Format:</translation>
     </message>
     <message>
-        <source>Выберите папку с HEIC снимками</source>
-        <translation>Select folder with HEIC photos</translation>
+        <source>Размер:</source>
+        <translation>Size:</translation>
+    </message>
+    <message>
+        <source>Качество:</source>
+        <translation>Quality:</translation>
+    </message>
+    <message>
+        <source>Папка:</source>
+        <translation>Folder:</translation>
+    </message>
+    <message>
+        <source>Папка: Рядом с оригиналом</source>
+        <translation>Folder: Next to original</translation>
+    </message>
+    <message>
+        <source>Выберите изображения</source>
+        <translation>Select images</translation>
+    </message>
+    <message>
+        <source>Изображения (*.heic *.heif *.avif *.webp *.jpg *.jpeg *.png *.bmp *.tiff);;Все файлы (*.*)</source>
+        <translation>Images (*.heic *.heif *.avif *.webp *.jpg *.jpeg *.png *.bmp *.tiff);;All Files (*.*)</translation>
+    </message>
+    <message>
+        <source>Выберите папку с изображениями</source>
+        <translation>Select a folder with images</translation>
     </message>
     <message>
         <source>Пусто</source>
         <translation>Empty</translation>
     </message>
     <message>
-        <source>В выбранной папке нет HEIC файлов</source>
-        <translation>No HEIC files found in the selected folder</translation>
+        <source>В выбранной папке не найдены поддерживаемые изображения</source>
+        <translation>No supported images found in the selected folder</translation>
     </message>
     <message>
-        <source>Выбрано файлов:</source>
-        <translation>Files selected:</translation>
-    </message>
-    <message>
-        <source>и ещё</source>
-        <translation>and</translation>
+        <source>Готово к обработке:</source>
+        <translation>Ready to process:</translation>
     </message>
     <message>
         <source>файлов</source>
-        <translation>more files</translation>
+        <translation>files</translation>
     </message>
     <message>
         <source>Успешно обработано:</source>
@@ -160,11 +200,31 @@
     </message>
     <message>
         <source>Пропущены поврежденные файлы</source>
-        <translation>Corrupted files skipped</translation>
+        <translation>Skipped corrupted files</translation>
     </message>
     <message>
         <source>шт.</source>
         <translation>pcs.</translation>
+    </message>
+    <message>
+        <source>Б</source>
+        <translation>B</translation>
+    </message>
+    <message>
+        <source>КБ</source>
+        <translation>KB</translation>
+    </message>
+    <message>
+        <source>МБ</source>
+        <translation>MB</translation>
+    </message>
+    <message>
+        <source>ГБ</source>
+        <translation>GB</translation>
+    </message>
+    <message>
+        <source>ТБ</source>
+        <translation>TB</translation>
     </message>
 </context>
 <context>
@@ -182,24 +242,48 @@
         <translation>About</translation>
     </message>
     <message>
-        <source>Доступно обновление!</source>
-        <translation>Update Available!</translation>
-    </message>
-    <message>
-        <source>Вышла новая версия</source>
-        <translation>A new version is available</translation>
-    </message>
-    <message>
-        <source>Скачать</source>
-        <translation>Download</translation>
-    </message>
-    <message>
         <source>Обновлений не найдено</source>
         <translation>No Updates Found</translation>
     </message>
     <message>
-        <source>У вас установлена последняя версия программы.</source>
-        <translation>You are using the latest version of the application.</translation>
+        <source>У вас установлена самая свежая версия!</source>
+        <translation>You already have the latest version!</translation>
+    </message>
+    <message>
+        <source>Доступно обновление {0}</source>
+        <translation>Update {0} is available</translation>
+    </message>
+    <message>
+        <source>Хотите скачать и установить новую версию приложения прямо сейчас?</source>
+        <translation>Do you want to download and install the new version now?</translation>
+    </message>
+    <message>
+        <source>Установить</source>
+        <translation>Install</translation>
+    </message>
+    <message>
+        <source>Позже</source>
+        <translation>Later</translation>
+    </message>
+    <message>
+        <source>Загрузка обновления...</source>
+        <translation>Downloading update...</translation>
+    </message>
+    <message>
+        <source>Пожалуйста, подождите, идёт скачивание установочного файла. Не закрывайте приложение.</source>
+        <translation>Please wait while the installer is being downloaded. Do not close the app.</translation>
+    </message>
+    <message>
+        <source>Загрузка:</source>
+        <translation>Downloading:</translation>
+    </message>
+    <message>
+        <source>Ошибка скачивания</source>
+        <translation>Download Error</translation>
+    </message>
+    <message>
+        <source>Не удалось загрузить обновление: {0}</source>
+        <translation>Failed to download the update: {0}</translation>
     </message>
 </context>
 <context>
@@ -218,7 +302,7 @@
     </message>
     <message>
         <source>Выберите тему интерфейса приложения</source>
-        <translation>Select application interface theme</translation>
+        <translation>Select the application theme</translation>
     </message>
     <message>
         <source>Тёмная</source>
@@ -234,7 +318,7 @@
     </message>
     <message>
         <source>Выберите язык приложения</source>
-        <translation>Select application language</translation>
+        <translation>Select the application language</translation>
     </message>
     <message>
         <source>Параметры конвертации</source>
@@ -246,7 +330,7 @@
     </message>
     <message>
         <source>Формат итогового изображения</source>
-        <translation>Format of the output image</translation>
+        <translation>Output image format</translation>
     </message>
     <message>
         <source>Разрешение</source>
@@ -254,7 +338,7 @@
     </message>
     <message>
         <source>Масштабирование исходного изображения</source>
-        <translation>Scaling of the original image</translation>
+        <translation>Scale of the original image</translation>
     </message>
     <message>
         <source>100% (Оригинал)</source>
@@ -262,23 +346,27 @@
     </message>
     <message>
         <source>75% размера</source>
-        <translation>75% of size</translation>
+        <translation>75% size</translation>
     </message>
     <message>
         <source>50% размера</source>
-        <translation>50% of size</translation>
+        <translation>50% size</translation>
     </message>
     <message>
         <source>25% размера</source>
-        <translation>25% of size</translation>
+        <translation>25% size</translation>
     </message>
     <message>
-        <source>Качество JPEG</source>
-        <translation>JPEG Quality</translation>
+        <source>Качество сжатия (90%)</source>
+        <translation>Compression quality (90%)</translation>
     </message>
     <message>
-        <source>Степень сжатия файлов JPEG</source>
-        <translation>Compression ratio of JPEG files</translation>
+        <source>Качество сжатия</source>
+        <translation>Compression quality</translation>
+    </message>
+    <message>
+        <source>Степень сжатия для JPEG, WEBP и AVIF</source>
+        <translation>Compression level for JPEG, WEBP, and AVIF</translation>
     </message>
     <message>
         <source>Сохранять EXIF-метаданные</source>
@@ -289,32 +377,40 @@
         <translation>Preserve capture date, GPS, and camera settings</translation>
     </message>
     <message>
-        <source>Удалять исходные .HEIC</source>
-        <translation>Delete original .HEIC</translation>
+        <source>Удалять исходные файлы</source>
+        <translation>Delete original files</translation>
     </message>
     <message>
-        <source>Автоматически удалять оригинальные файлы после успешной конвертации</source>
-        <translation>Automatically delete original files after successful conversion</translation>
+        <source>Автоматически удалять оригиналы после успешной конвертации</source>
+        <translation>Automatically delete originals after a successful conversion</translation>
     </message>
     <message>
         <source>Сохранение и система</source>
         <translation>Saving and System</translation>
     </message>
     <message>
-        <source>Папка для сохранения</source>
-        <translation>Output Folder</translation>
+        <source>Сохранять в подпапку Converted</source>
+        <translation>Save to Converted subfolder</translation>
     </message>
     <message>
-        <source>Сохранять в ту же папку, где лежит оригинал</source>
-        <translation>Save to the same folder as original</translation>
+        <source>Создавать подпапку Converted в месте сохранения (рядом с оригиналом или в выбранной папке)</source>
+        <translation>Create a Converted subfolder at the destination (next to the original or in the selected folder)</translation>
     </message>
     <message>
-        <source>Выбрать папку</source>
-        <translation>Select Folder</translation>
+        <source>Пользовательская папка</source>
+        <translation>Custom folder</translation>
     </message>
     <message>
-        <source>Папка:</source>
-        <translation>Folder:</translation>
+        <source>Сохранять файлы в фиксированную папку</source>
+        <translation>Save files to a fixed folder</translation>
+    </message>
+    <message>
+        <source>Выбрать</source>
+        <translation>Browse</translation>
+    </message>
+    <message>
+        <source>Сбросить</source>
+        <translation>Reset</translation>
     </message>
     <message>
         <source>Контекстное меню Windows (ПКМ)</source>
@@ -322,7 +418,7 @@
     </message>
     <message>
         <source>Интегрировать пункт конвертации в проводник Windows</source>
-        <translation>Integrate conversion option into Windows Explorer</translation>
+        <translation>Add a conversion item to Windows Explorer</translation>
     </message>
     <message>
         <source>Добавить</source>
@@ -337,8 +433,16 @@
         <translation>Off</translation>
     </message>
     <message>
+        <source>Папка:</source>
+        <translation>Folder:</translation>
+    </message>
+    <message>
+        <source>Сохранять рядом с оригиналами (кастомный путь не задан)</source>
+        <translation>Save next to originals (no custom path set)</translation>
+    </message>
+    <message>
         <source>Выберите папку для сохранения</source>
-        <translation>Select folder for saving</translation>
+        <translation>Select a save folder</translation>
     </message>
     <message>
         <source>Успех!</source>
@@ -346,7 +450,7 @@
     </message>
     <message>
         <source>Пункт меню с иконкой успешно обновлен!</source>
-        <translation>Context menu option with icon updated successfully!</translation>
+        <translation>Context menu item with icon updated successfully!</translation>
     </message>
     <message>
         <source>Ошибка</source>
@@ -354,7 +458,7 @@
     </message>
     <message>
         <source>Не удалось внести изменения в реестр.</source>
-        <translation>Failed to modify registry.</translation>
+        <translation>Failed to modify the registry.</translation>
     </message>
 </context>
 </TS>
