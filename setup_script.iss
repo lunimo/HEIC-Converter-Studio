@@ -1,6 +1,6 @@
 [Setup]
 AppName=HEIC Converter Studio
-AppVersion=2.2.0
+AppVersion=3.0.0
 UninstallDisplayName=HEIC Converter Studio
 AppPublisher=lunityl
 DefaultDirName={autopf}\HEIC Converter Studio
@@ -9,7 +9,7 @@ UninstallDisplayIcon={app}\HEIC Converter Studio.exe
 Compression=lzma2/ultra64
 SolidCompression=yes
 OutputDir=Output
-OutputBaseFilename=HEIC_Converter_Studio_Setup_v2.2.0
+OutputBaseFilename=HEIC_Converter_Studio_Setup_v3.0.0
 SetupIconFile=app_icon.ico
 
 ; Поддержка установки без прав администратора / для всех пользователей
